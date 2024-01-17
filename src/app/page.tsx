@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import ServerComponent from './ServerComponent'
 import ClientComponent from './ClientComponent'
+import Parent_RSC from './Parent_RSC'
 
 export default function Home() {
   return (
@@ -11,9 +11,15 @@ export default function Home() {
           <code className="font-mono font-bold">src/app/page.tsx</code>
         </p>
       </div>
-
-      <ServerComponent />
-      <ClientComponent />
+      <div className="container">
+        <div className="column">
+          <ServerComponent />
+          <ClientComponent />
+        </div>
+        <div className="column">
+          <Parent_RSC />
+        </div>
+      </div>
 
     </main>
   )
