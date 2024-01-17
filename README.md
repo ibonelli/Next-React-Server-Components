@@ -4,21 +4,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 This code goes along with weKnow's article [React Server components (in a Next.js application)]() which tries to show React Server Component within Next.js 14 and compare it to React Client Component.
 
-It also shows SSR & SSG to complete the picture.
-
 ## Running
 
 Next.js v14 requires Node.js version v18.17.0 or above. So you'll need to have it install. In my case I use NVM and added an `.nvmrc` file, so you can simply run `nvm use` and things should get straighten out.
 
-For the data to be available you'll need run a script before running the application:
-
-```bash
-node src/lib/setup.js
-```
-
-This copies a data file into your home directory, once you finish using this app it can be deleted (or use clean up instructions below).
-
-So, we can now run the development server:
+To run the development server:
 
 ```bash
 npm run dev
@@ -36,11 +26,3 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-## Clean Up
-
-Just run:
-
-```bash
-node src/lib/cleanup.js
-```

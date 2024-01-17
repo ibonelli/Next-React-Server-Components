@@ -3,8 +3,7 @@ import path from 'path';
 
 export function getData() {
 	const os = require('os');
-	const homeDirectory = os.homedir();
-	const filePath = path.resolve(homeDirectory, "namelist.json");
+	const filePath = path.resolve("./", "namelist.json");
 
 	var MyList: any;
   try {
