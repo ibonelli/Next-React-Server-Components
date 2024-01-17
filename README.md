@@ -8,16 +8,20 @@ It also shows SSR & SSG to complete the picture.
 
 ## Running
 
-First, run the development server:
+Next.js v14 requires Node.js version v18.17.0 or above. So you'll need to have it install. In my case I use NVM and added an `.nvmrc` file, so you can simply run `nvm use` and things should get straighten out.
+
+For the data to be available you'll need run a script before running the application:
+
+```bash
+node src/lib/setup.js
+```
+
+This copies a data file into your home directory, once you finish using this app it can be deleted (or use clean up instructions below).
+
+So, we can now run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -33,4 +37,10 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Clean Up
+
+Just run:
+
+```bash
+node src/lib/cleanup.js
+```

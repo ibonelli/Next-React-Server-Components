@@ -12,9 +12,7 @@ export default function Home() {
         </p>
       </div>
 
-      <p>This is:</p>
       <ServerComponent />
-      <p>And a:</p>
       <ClientComponent />
 
     </main>
