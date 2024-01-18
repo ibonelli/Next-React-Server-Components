@@ -8,7 +8,13 @@ This code goes along with weKnow's article [React Server components (in a Next.j
 
 Next.js v14 requires Node.js version v18.17.0 or above. So you'll need to have it install. In my case I use NVM and added an `.nvmrc` file, so you can simply run `nvm use` and things should get straighten out.
 
-To run the development server:
+First do an NPM install:
+
+```bash
+npm install
+```
+
+And then you can run the development server:
 
 ```bash
 npm run dev

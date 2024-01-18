@@ -23,7 +23,11 @@ const Child_RCC = (data: any) => {
 				))}
 			</ul>
       <br/>
-      <button className='button' onClick={handleButtonClick}>Click To Hide Items</button>
+      <button
+        className='button'
+        onClick={handleButtonClick}>
+          Click To Hide Items
+      </button>
 		</>
   );
 };
